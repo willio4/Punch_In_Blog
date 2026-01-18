@@ -1,0 +1,104 @@
+:root {
+  /* Backgrounds / surfaces */
+  --color-bg: #0d0d0d;         /* Almost black main background */
+  --color-surface: #1a1a1a;    /* Dark gray cards / sections */
+  --color-surface-alt: #2c2c2c; /* Slightly lighter for hover or secondary surfaces */
+
+  /* Text */
+  --color-text: #e5e5e5;       /* light gray for readability */
+  --color-text-muted: #a1a1a1; /* muted gray for secondary text */
+
+  /* Brand / accent colors */
+  --color-accent-1: #ff0055;   /* hot pink / neon, for buttons or links */
+  --color-accent-2: #8cff00;   /* cyan / electric, for highlights */
+  --color-accent-3: #ffbf00;   /* gold / yellow, for featured items */
+
+  /* Borders / highlights */
+  --color-border: #333333;     /* subtle divider color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text);
+}
+
+header {
+  background-color: var(--color-surface);
+  border-bottom: 3px solid var(--color-primary);
+}
+.btn-primary {
+  background-color: var(--color-accent-1);
+  border-color: var(--color-accent-1);
+  color: var(--color-surface-alt);
+  font-weight: bold;
+}
+
+.dark-text {
+  color: var(--color-bg);
+}
+
+.light-text {
+  color: var(--color-text-muted);
+}
+
+header a {
+  color: var(--color-text);
+    text-decoration: none;
+}
+
+footer span{
+    color: var(--color-text);
+}
+
+.form-control {
+  background-color: #fff;
+  border-color: var(--color-secondary);
+}
+
+.form-control:focus {
+  border-color: var(--color-accent-3);
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+body {
+  background: var(--color-surface);
+}
+
+
+header {
+  background: var(--color-primary);
+}
+
+p {
+  color: var(--color-text-muted);
+}
+
+span:hover {
+  color: var(--color-accent-3);
+}
+
+ a.active {
+  color: var(--color-accent-3);
+}
+
+.quote {
+  border-left: 4px solid var(--color-highlight);
+}
+
+
+.gravitas-one-regular {
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spotify-button {
+  background-color: #1f1f1f;
+  color: #1DB954;
+  border: 2px solid #1DB954;
+}
+
+.apple-button {
+  background-color: #ffffff;
+  color: black;
+  border: 2px solid #fa57c1;
+}
