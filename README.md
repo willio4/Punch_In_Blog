@@ -1,3 +1,1 @@
-# Blog_Website
-# Blog_Website
-# Blog_Website
+# This is a mock up blog website
