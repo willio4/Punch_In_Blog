@@ -1,5 +1,6 @@
 <%- include("partials/header") %> <% const article = articles[5]; %>
 
+<!-- Article Header -->
 <div class="container border-bottom">
   <div class="row my-3">
     <div class="col-md">
@@ -12,11 +13,13 @@
     </div>
   </div>
 </div>
-
+<!-- Article Content -->
 <div class="container my-5">
   <div class="row">
     <p><%- article.content %></p>
   </div>
 </div>
+
+<%- include("partials/editArticle", {article: article}) %>
 
 <%- include("partials/footer") %>

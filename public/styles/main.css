@@ -10,7 +10,7 @@
 
   /* Brand / accent colors */
   --color-accent-1: #ff0055;   /* hot pink / neon, for buttons or links */
-  --color-accent-2: #8cff00;   /* cyan / electric, for highlights */
+  --color-accent-2: #00ffe5;   /* cyan / electric, for highlights */
   --color-accent-3: #ffbf00;   /* gold / yellow, for featured items */
 
   /* Borders / highlights */
@@ -28,6 +28,23 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid var(--color-accent-3);
 }
 
+.btn-edit {
+  background-color: var(--color-accent-2);
+  border-color: var(--color-accent-2);
+  color: var(--color-surface-alt);
+  font-weight: bold;
+}
+
+.btn-edit:hover {
+  background-color: #00d4c2;
+  border-color: #00d4c2;
+  color: var(--color-surface-alt);
+}
+
+#contentEdit {
+  height: auto;
+  field-sizing: content;
+}
 
 header {
   background-color: var(--color-surface);

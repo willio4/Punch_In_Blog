@@ -1,0 +1,80 @@
+<!-- Edit Article -->
+<div class="container my-5 text-end">
+  <button
+    type="button"
+    class="btn btn-edit"
+    data-bs-toggle="modal"
+    data-bs-target="#confirmModal"
+  >
+    Edit Article
+  </button>
+
+  <!-- Modal -->
+  <form method="POST" action="/edit/<%= article.id %>?_method=PATCH">
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Editing Article...</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body text-start">
+            <!-- Title Edit -->
+            <div class="mb-3">
+              <label for="title" class="form-label">Title:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="titleEdit"
+                name="title"
+                value="<%= article.title %>"
+              />
+            </div>
+
+            <!-- Author Edit -->
+            <div class="mb-3">
+              <label for="author" class="form-label">Author:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="authorEdit"
+                name="author"
+                value="<%= article.author %>"
+              />
+            </div>
+
+            <!-- Content Edit -->
+            <div class="mb-3">
+              <label for="content" class="form-label">Content:</label>
+              <textarea
+                class="form-control"
+                id="contentEdit"
+                name="content"
+              >
+                <%= article.content %>
+            </textarea>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+
+            <!-- This is the ONLY thing that navigates or submits -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
