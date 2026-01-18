@@ -1,0 +1,22 @@
+<%- include("partials/header") %> <% const article = articles[0]; %>
+
+<div class="container border-bottom">
+  <div class="row my-3">
+    <div class="col-md">
+      <img src="<%= article.img %>" alt="Drake and Brent" id="article-header" />
+    </div>
+
+    <div class="col-md-9 align-self-end ms-2">
+      <h1 class="mb-0"><%= article.title %></h1>
+      <p>By <%= article.author %> | <%= article.date %></p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row">
+    <p><%- article.content %></p>
+  </div>
+</div>
+
+<%- include("partials/footer") %>
